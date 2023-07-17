@@ -33,3 +33,9 @@ void empilha(Itemp x, Pilha P) {
     P->item[P->topo] = x;
     
 }
+
+Itemp desempilha(Pilha P){
+    if(vaziap(P) ) {puts("pilhavazia"); abort(); 
+    return P->item[P->topo];
+    }
+}
