@@ -39,3 +39,8 @@ Itemp desempilha(Pilha P){
     return P->item[P->topo];
     }
 }
+
+Itemp topo(Pilha P){
+    if(vaziap(P)) {puts("Pilha vazia"); abort();
+    return P->item[P->topo];}
+}
