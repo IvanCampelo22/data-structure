@@ -44,3 +44,9 @@ Itemp topo(Pilha P){
     if(vaziap(P)) {puts("Pilha vazia"); abort();
     return P->item[P->topo];}
 }
+
+void destroip(Pilha *Q){
+    free((*Q)->item);
+    free(*Q);
+    *Q = NULL;
+}
