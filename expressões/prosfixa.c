@@ -16,6 +16,17 @@ char *prosfixa(char *e){
     return s;
     }
 
+int prio(char o){
+    switch(o){
+        case '(': return 0;
+        case '+':
+        case '-': return 1;
+        case '*':
+        case '/': return 2;
+    }
+    return -1;
+}
+
 int main(void){
     char e[256];
     printf("Infixa?");
